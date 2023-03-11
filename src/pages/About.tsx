@@ -2,6 +2,7 @@ import { Box, Flex, keyframes } from '@chakra-ui/react'
 import { FaReact } from 'react-icons/fa'
 
 import { useAppSelector } from '@/store'
+import SweepingLight from '@/components/SweepingLight'
 
 const About = () => {
   const { value } = useAppSelector(state => state.count)
@@ -18,6 +19,14 @@ const About = () => {
       </Box>
       <h1>Yu-React-template</h1>
       <Box>redux count: {value}</Box>
+      <SweepingLight>
+        123
+        <h1>Yu-React-template</h1>
+        <h1>Yu-React-template</h1>
+        <h1>Yu-React-template</h1>
+        <h1>Yu-React-template</h1>
+        <h1>Yu-React-template</h1>
+      </SweepingLight>
     </Flex>
   )
 }
